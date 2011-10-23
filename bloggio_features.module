@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the bloggio features feature.
+ */
+
+include_once('bloggio_features.features.inc');
