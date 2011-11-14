@@ -62,6 +62,100 @@ function bloggio_features_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'date_popup_timepicker';
+  $strongarm->value = 'default';
+  $export['date_popup_timepicker'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'fblikebutton_action';
+  $strongarm->value = 'like';
+  $export['fblikebutton_action'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'fblikebutton_color_scheme';
+  $strongarm->value = 'light';
+  $export['fblikebutton_color_scheme'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'fblikebutton_font';
+  $strongarm->value = 'arial';
+  $export['fblikebutton_font'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'fblikebutton_iframe_css';
+  $strongarm->value = '';
+  $export['fblikebutton_iframe_css'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'fblikebutton_iframe_height';
+  $strongarm->value = '80';
+  $export['fblikebutton_iframe_height'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'fblikebutton_iframe_width';
+  $strongarm->value = '450';
+  $export['fblikebutton_iframe_width'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'fblikebutton_language';
+  $strongarm->value = 'en_US';
+  $export['fblikebutton_language'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'fblikebutton_layout';
+  $strongarm->value = 'standard';
+  $export['fblikebutton_layout'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'fblikebutton_node_types';
+  $strongarm->value = array(
+    'blog' => 'blog',
+    'page' => 0,
+  );
+  $export['fblikebutton_node_types'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'fblikebutton_showonteasers';
+  $strongarm->value = '0';
+  $export['fblikebutton_showonteasers'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'fblikebutton_show_faces';
+  $strongarm->value = 'hide';
+  $export['fblikebutton_show_faces'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'fblikebutton_weight';
+  $strongarm->value = '50';
+  $export['fblikebutton_weight'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_page';
   $strongarm->value = array(
     0 => 'main-menu',
@@ -112,6 +206,55 @@ function bloggio_features_strongarm() {
   $strongarm->name = 'pathauto_node_pattern';
   $strongarm->value = '[node:title]';
   $export['pathauto_node_pattern'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_publish_enable_blog';
+  $strongarm->value = 1;
+  $export['scheduler_publish_enable_blog'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_publish_required_blog';
+  $strongarm->value = 0;
+  $export['scheduler_publish_required_blog'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_publish_revision_blog';
+  $strongarm->value = 0;
+  $export['scheduler_publish_revision_blog'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_publish_touch_blog';
+  $strongarm->value = 1;
+  $export['scheduler_publish_touch_blog'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_unpublish_enable_blog';
+  $strongarm->value = 0;
+  $export['scheduler_unpublish_enable_blog'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_unpublish_required_blog';
+  $strongarm->value = 0;
+  $export['scheduler_unpublish_required_blog'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_unpublish_revision_blog';
+  $strongarm->value = 0;
+  $export['scheduler_unpublish_revision_blog'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -210,6 +353,87 @@ function bloggio_features_strongarm() {
   $strongarm->name = 'simplify_node_hide_revision_information';
   $strongarm->value = 1;
   $export['simplify_node_hide_revision_information'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'tweet_exclude';
+  $strongarm->value = '';
+  $export['tweet_exclude'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'tweet_format';
+  $strongarm->value = '[url] [title] [node-tags]';
+  $export['tweet_format'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'tweet_identica_image';
+  $strongarm->value = 'profiles/bloggio/modules/contrib/tweet/identica.png';
+  $export['tweet_identica_image'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'tweet_image';
+  $strongarm->value = 'profiles/bloggio/modules/contrib/tweet/twitter.png';
+  $export['tweet_image'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'tweet_new_window';
+  $strongarm->value = 'target';
+  $export['tweet_new_window'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'tweet_node';
+  $strongarm->value = 'icon';
+  $export['tweet_node'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'tweet_node_vocabs';
+  $strongarm->value = array();
+  $export['tweet_node_vocabs'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'tweet_sites';
+  $strongarm->value = array(
+    'Twitter' => 'Twitter',
+  );
+  $export['tweet_sites'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'tweet_teaser';
+  $strongarm->value = 'none';
+  $export['tweet_teaser'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'tweet_text';
+  $strongarm->value = 'Post to [site]';
+  $export['tweet_text'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'tweet_types';
+  $strongarm->value = array(
+    'blog' => 'blog',
+  );
+  $export['tweet_types'] = $strongarm;
 
   return $export;
 }
