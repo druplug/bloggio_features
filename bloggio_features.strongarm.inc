@@ -469,7 +469,7 @@ function bloggio_features_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'xmlsitemap_generated_last';
-  $strongarm->value = 1321249944;
+  $strongarm->value = 1321446201;
   $export['xmlsitemap_generated_last'] = $strongarm;
 
   $strongarm = new stdClass;
@@ -492,9 +492,16 @@ function bloggio_features_strongarm() {
   $strongarm->name = 'xmlsitemap_settings_node_blog';
   $strongarm->value = array(
     'status' => '1',
-    'priority' => '0.8',
+    'priority' => '0.9',
   );
   $export['xmlsitemap_settings_node_blog'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'xmlsitemap_settings_node_blog_show';
+  $strongarm->value = 0;
+  $export['xmlsitemap_settings_node_blog_show'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -505,6 +512,13 @@ function bloggio_features_strongarm() {
     'priority' => '0.5',
   );
   $export['xmlsitemap_settings_node_page'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'xmlsitemap_settings_node_page_show';
+  $strongarm->value = 0;
+  $export['xmlsitemap_settings_node_page_show'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
