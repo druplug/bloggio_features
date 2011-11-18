@@ -532,7 +532,7 @@ function bloggio_features_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'xmlsitemap_generated_last';
-  $strongarm->value = 1321576524;
+  $strongarm->value = 1321608316;
   $export['xmlsitemap_generated_last'] = $strongarm;
 
   $strongarm = new stdClass;
@@ -588,8 +588,9 @@ function bloggio_features_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'xmlsitemap_settings_taxonomy_term_tags';
   $strongarm->value = array(
-    'status' => '1',
+    'status' => '0',
     'priority' => '0.5',
+    'show' => 0,
   );
   $export['xmlsitemap_settings_taxonomy_term_tags'] = $strongarm;
 
