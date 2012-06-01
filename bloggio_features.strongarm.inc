@@ -344,7 +344,7 @@ function bloggio_features_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'simplify_blog_node_hide_options';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['simplify_blog_node_hide_options'] = $strongarm;
 
   $strongarm = new stdClass;
@@ -393,7 +393,7 @@ function bloggio_features_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'simplify_node_hide_options';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['simplify_node_hide_options'] = $strongarm;
 
   $strongarm = new stdClass;
@@ -414,7 +414,7 @@ function bloggio_features_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'theme_default';
-  $strongarm->value = 'bartik';
+  $strongarm->value = 'comet';
   $export['theme_default'] = $strongarm;
 
   $strongarm = new stdClass;
@@ -532,7 +532,7 @@ function bloggio_features_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'xmlsitemap_generated_last';
-  $strongarm->value = 1321608316;
+  $strongarm->value = 1338452559;
   $export['xmlsitemap_generated_last'] = $strongarm;
 
   $strongarm = new stdClass;
@@ -546,7 +546,7 @@ function bloggio_features_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'xmlsitemap_regenerate_needed';
-  $strongarm->value = FALSE;
+  $strongarm->value = TRUE;
   $export['xmlsitemap_regenerate_needed'] = $strongarm;
 
   $strongarm = new stdClass;
